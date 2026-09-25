@@ -1,0 +1,38 @@
+@layer theme, base, legacy, components, utilities;
+@import "tailwindcss";
+@import "../styles/legacy.css" layer(legacy);
+@import "../styles/header.css" layer(legacy);
+@plugin "tailwindcss-animate";
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #18181b;
+  --color-muted: #f4f4f5;
+  --color-muted-foreground: #52525b;
+  --color-primary: #075cdd;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f4f4f5;
+  --color-secondary-foreground: #18181b;
+  --color-accent: #eff6ff;
+  --color-accent-foreground: #075cdd;
+  --color-destructive: #b91c1c;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #e4e4e7;
+  --color-input: #d4d4d8;
+  --color-ring: #075cdd;
+  --color-brand: #075cdd;
+  --color-brand-dark: #064bbb;
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  .reference-hero { display: none !important; }
+  #contact-section { scroll-margin-top: 8rem; }
+  #contact-section input, #contact-section select, #contact-section textarea {
+    font-family: inherit;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
