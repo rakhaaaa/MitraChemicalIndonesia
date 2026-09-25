@@ -8,8 +8,7 @@
   "d1_databases": [{
     "binding": "DB",
     "database_name": "mitra-chemical-indonesia",
-    // Replace with your Cloudflare D1 database ID before deploying.
-    "database_id": "00000000-0000-4000-8000-000000000000",
+    "database_id": "e9216c86-9c51-41c4-9106-7d17be27b903",
     "migrations_dir": "drizzle"
   }],
   "vars": {
